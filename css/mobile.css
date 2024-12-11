@@ -1,0 +1,33 @@
+@media screen and (max-width: 1000px) {
+  .feature .featuregrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .feature .featuregrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .banner1 {
+    display: none;
+  }
+  .banner2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .landing .main-wrapper h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 900px) {
+    .aboutUsGrid{
+        grid-template-columns: repeat(1,100%);
+    }
+  }

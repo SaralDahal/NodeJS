@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+  height: fit-content;
+}
+.header nav {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+.header .button {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+  color: black;
+}
+.header .button a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 16px;
+}
+.header .button a:nth-child(1) {
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+}
+.header .button a:nth-child(2) {
+  background-color: #4260ff;
+  border-radius: 12px;
+}
+.landing {
+  width: 100%;
+  height: 90vh;
+  background-color: gainsboro;
+}
+.main-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-wrapper img {
+  mix-blend-mode: multiply;
+}
+.main-wrapper h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.main-wrapper a {
+  text-decoration: none;
+  background-color: #4260ff;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 18px;
+}
+.main-wrapper .banner1 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transform: rotate(30deg);
+}
+.main-wrapper .banner2 {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  transform: rotate(-30deg);
+}
+.aboutUsGrid {
+  margin: 40px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 50px;
+  color: black;
+  padding: 0 40px;
+}
+.aboutUsGrid div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feature {
+  margin: 40px 0;
+  padding: 0 40px;
+}
+.feature .featuregrid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 300px; */
+  gap: 30px;
+}
+.feature .featuregrid div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 40px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in;
+}
+.feature .featuregrid div:hover {
+    transform: translateY(-20px);
+}
